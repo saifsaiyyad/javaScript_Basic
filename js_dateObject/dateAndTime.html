@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var dt =new Date()
+document.write("the time is [time is allwase display in seconds ] =", dt.getTime());
+var hh = dt.getHours();
+var mm = dt.getMinutes();
+var ss = dt.getSeconds();
+document.write("<br>");
+document.write(hh+":"+mm+":"+ss)
+function yearFun(){
+
+document.getElementById("p").innerHTML = dt.getFullYear();
+}
+</script>
+<body>
+<p id="p">some text is here</p>
+<button onclick="yearFun();">click me</button>
+</body>
+
+
+</html>

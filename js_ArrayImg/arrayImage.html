@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+var arr =["logo.png","sha.png","download.png","sha2.png"];
+var arrlen=arr.length;
+//document.write("array length=",arrlen);
+i=0
+function next(){
+			i++
+			if(i<=arr.length-1){								
+						document.getElementById("img1").src="./"+arr[i];
+					}
+				else
+				{
+					alert("no images to display");
+						
+				}
+
+		}
+
+function prev(){
+i--
+ if(i>=0){
+		document.getElementById("img1").src="./"+arr[i];
+	}
+else
+{
+	alert("no images to display");
+}
+}
+</script>
+</head>
+<body>
+<img src="logo.png" height="200px" width="200px" id="img1"><br>
+<button onclick="prev();">prev</button>
+<button onclick="next();">next</button>
+
+
+
+</body>
+</html>

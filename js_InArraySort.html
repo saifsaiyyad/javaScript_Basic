@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<button onclick="sortArray()">Try it</button>
+<p id="demo"></p>
+<script>
+var num =new Array("6","5","4","3","2","1");
+document.getElementById("demo").innerHTML=num;
+function sortArray()
+{
+	num.sort();
+	document.getElementById("demo").innerHTML=num;
+}
+</script>
+</body>
+</html>
